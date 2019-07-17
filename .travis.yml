@@ -4,6 +4,7 @@ services:
 - docker
 
 script:
+- docker version
 - docker build -f Dockerfile-amd64 -t jamesx79/test:amd64 .
 - docker build -f Dockerfile-arm -t jamesx79/test:arm .
 #- docker push jamesx79/test:amd64
