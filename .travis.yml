@@ -1,7 +1,8 @@
 services:
-  - docker
-
+- docker
 script:
-  - docker build -t jamesx79/test .
-
-
+- docker build -t jamesx79/test .
+- echo $MY_SECRET_ENV
+env:
+  matrix:
+    secure: NG7/RjRtENrILZRyjoUYyi/8bYlIINDAveeRomTLXBYz4+/Fat6uUsSuhlFdxWENd94MDzsLEZDnUVVMWfxpMcNH4iig9HIgQS5AH7R2CpavqyFb2ZDi6ZFyrXtxG8xUNf6NCtp3sERsPftXvqPa6Ruu7H0vwIihrWC3DOP6qaqxFYq/FEztNW+skTMztOqX5sViOIGyapuInxEBZaLD6kHIWcukjhyGTmR1p0gz4TooSjNjCO8icep9ndFaDq4mTOxYMAyuSQg+UoPNhoxD2F2yWzurNenDdy1xHTL0i7CJD6SEKDtPvsf16mH/fzbWBK/NBZBVBNjfzdSoK9hIR7k8Lwde1XPw0xgbgSaU6gKpOOAucZx4etJNrv/2/486XX14MtoDnnU6STM0YhKq5KE12R9S8dZoMCJarnVnKM55y7YMLelTkQgYqAzKreCamw0SrSlgTJKuDGVycBN9j+jqOWV9xOcydYXdd89S1mF6sQfba9hQvKt/o9qq2sJfsdH0EOsKq0YFGkrCgIPhwhz/wr103qhXnR+o4d0OkRER/FkSuRE2K4pyd/8VEGMgwDwjd22vzhEqhDQ/ZypQgyVXjA7eromg7kygB7WcRFG1GYCXNn/hysXtyqb4Vj5+Hw5lvDK74/iXetpsIx8BJGtdXVQj0gNLSMPAoosWU9c=
